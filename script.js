@@ -34,13 +34,3 @@ document.querySelectorAll('.project-card').forEach(card => {
   card.style.transition = 'all 0.6s ease';
   observer.observe(card);
 });
-
-// Add click event to project cards
-document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('click', function() {
-    this.style.transform = 'scale(0.98)';
-    setTimeout(() => {
-      this.style.transform = 'translateY(-5px)';
-    }, 100);
-  });
-});
